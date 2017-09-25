@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>  
+<body>
+
+<ul class="sorting" id="demo">
+
+</ul>
+</body>
+
+<script>
+var numbers = [2, 5, 12, 15, 4, 12, 53, 32 ,123, 4];
+var addedup = null;
+
+numbers.forEach(function (element, index, array) {
+
+	if (index < numbers.length - 1){
+	  addedup = numbers[index + 1];
+	  var x = element + addedup;
+	  console.log('item ' + index + ' = ' + x);
+	}
+}
+);
+</script> 
+
+</html>
+
+
+
